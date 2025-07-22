@@ -1,0 +1,31 @@
+backend:
+  name: github
+  repo: OasisPioneer/StyxBlog
+  branch: main
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "Blog"
+    label: "Blog"
+    folder: "content/post"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Rating (scale of 1-5)", name: "rating", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "页面"
+    files:
+      - file: "content/about.md" # 直接指定要编辑的单个文件
+        label: "关于我们"
+        name: "about"
+        fields:
+          - { label: "标题", name: "title", widget: "string" }
+          - { label: "正文", name: "body", widget: "markdown" }

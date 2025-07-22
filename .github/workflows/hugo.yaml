@@ -41,6 +41,7 @@ jobs:
         env:
           HUGO_ENV: production
           HUGO_BASEURL: ${{ steps.pages.outputs.base_url }}
+          HUGO_ENVIRONMENT: production
         run: |
           hugo \
             --gc \
