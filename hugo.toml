@@ -10,6 +10,11 @@ theme = 'Stack'
 [Params.Sidebar]
 	subtitle = '冥河博客'
 
+[Avatar]
+	Enabled = true
+	src = 'img/avatar.png'
+	local = true
+
 [menu]
 [[menu.main]]
     name = 'Home'
