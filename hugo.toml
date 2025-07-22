@@ -17,7 +17,7 @@ theme = 'Stack'
 
 [menu]
 [[menu.main]]
-    name = 'Home'
+    name = '首页'
     url = '/'
     weight = 10
     identifier = 'Home'
@@ -25,23 +25,23 @@ theme = 'Stack'
         icon = "home"
         newTab = false
 
-[[menu.main]]
-    name = 'Rss'
-    url = '/index.xml'
-    weight = 20
-    identifier = 'Rss'
-    [menu.main.params]
-        icon = "rss"
-        newTab = true
+# [[menu.main]]
+#     name = 'Rss'
+#     url = '/index.xml'
+#     weight = 20
+#     identifier = 'Rss'
+#     [menu.main.params]
+#         icon = "rss"
+#         newTab = true
 
-[[menu.main]]
-    name = 'SiteMap'
-    url = '/sitemap.xml'
-    weight = 30
-    identifier = 'SiteMap'
-    [menu.main.params]
-        # icon = "sitemap"
-        newTab = true
+# [[menu.main]]
+#     name = 'SiteMap'
+#     url = '/sitemap.xml'
+#     weight = 30
+#     identifier = 'SiteMap'
+#     [menu.main.params]
+#         icon = "sitemap"
+#         newTab = true
 
 [Params.Article]
 	toc = true
@@ -55,4 +55,4 @@ theme = 'Stack'
 
 [Params.Footer]
 	since = 2025
-	customText = 'Styx Blog'
+	customText = 'Styx Blog | <a href="/index.xml" target="_blank">Rss</a> | <a href="/sitemap.xml" target="_blank">SiteMap</a>'
