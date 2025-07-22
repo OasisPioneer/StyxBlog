@@ -1,0 +1,53 @@
+baseURL = 'https://example.org/'
+languageCode = 'zh-CN'
+title = 'Styx Blog'
+theme = 'Stack'
+
+[Params]
+	description = '冥河博客 一个专注于分享各种网络技术的博客'
+	rssFullContent = true
+
+[Params.Sidebar]
+	subtitle = '冥河博客'
+
+[menu]
+[[menu.main]]
+    name = 'Home'
+    url = '/'
+    weight = 10
+    identifier = 'Home'
+    [menu.main.params]
+        icon = "home"
+        newTab = false
+
+[[menu.main]]
+    name = 'Rss'
+    url = '/index.xml'
+    weight = 20
+    identifier = 'Rss'
+    [menu.main.params]
+        icon = "rss"
+        newTab = true
+
+[[menu.main]]
+    name = 'SiteMap'
+    url = '/sitemap.xml'
+    weight = 30
+    identifier = 'SiteMap'
+    [menu.main.params]
+        icon = "sitemap"
+        newTab = true
+
+[Params.Article]
+	toc = true
+	math = true
+	readingTime = true
+	[Params.Article.License]
+		enabled = true
+
+[Params.OpenGraph]
+	twitter = { site = "OasisPioneers", card = "summary_large_image" }
+
+[Params.Footer]
+	since = 2025
+	customText = 'Styx Blog'
