@@ -40,7 +40,7 @@ theme = 'Stack'
     weight = 30
     identifier = 'SiteMap'
     [menu.main.params]
-        icon = "sitemap"
+        # icon = "sitemap"
         newTab = true
 
 [Params.Article]
